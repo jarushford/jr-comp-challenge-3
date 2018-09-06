@@ -8,12 +8,13 @@ body {
   grid-template-columns: 160px 1fr;
 }
 
+
 /* ================= NAVBAR STYLES ================= */
 
+
 .navbar {
-  background-color: blanchedalmond;
   display: grid;
-  grid-template-rows: 160px repeat(3, 1fr);
+  grid-template-rows: 160px repeat(2, 1.5fr) 2fr;
   grid-row: span 2;
   height: 100vh;
 }
@@ -22,6 +23,7 @@ body {
   align-items: center;
   background: #354052;
   border-bottom: 3px solid #2F3A4C;
+  color: #8E97A8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,24 +36,136 @@ body {
 }
 
 .profile-title {
-  color: #8E97A8;
   font-size: .75rem;
   letter-spacing: .5px;
   margin: 0;
+}
+
+.profile-title:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .profile-title i {
   margin: 2px;
 }
 
+/* === MENU STYLES === */
+
+.menu {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.nav-item-title {
+  color: #626F82;
+  height: 8px;
+  margin: 0;
+}
+
+.nav-item-list {
+  list-style: none;
+  font-size: .7rem;
+  padding: 0 0 5px 0;
+  text-transform: uppercase;
+}
+
+
+td:nth-child(2) {
+  width: 100%;
+}
+
+.last-menu {
+  padding-right: 45px;
+}
+
+.nav-item-list-item:hover td {
+  background: #30394A;
+  color: white;
+  cursor: pointer;
+}
+
+.list3 {
+  text-transform: none;
+}
+
+.top-menus td:first-child {
+  text-align: center;
+  padding-right: 2px;
+}
+
+/* === CUSTOM CHECKBOXES === */
+
+.checkbox-container {
+  display: inline-block;
+  height: 14px;
+  margin-right: 7px;
+  position: relative;
+  width: 14px;
+}
+
+.checkbox-container label {
+  border-radius: 2px;
+  cursor: pointer;
+  left: 0;
+  height: 14px;
+  position: absolute;
+  top: 0;
+  width: 14px;
+}
+
+.checkbox-container #checkbox1 + label {
+  background: #FDD504;
+}
+
+.checkbox-container #checkbox2 + label {
+  background: #24AEFE;
+}
+
+.checkbox-container #checkbox3 + label {
+  background: #EB1760;
+}
+
+.checkbox-container #checkbox4 + label {
+  background: #01A887;
+}
+
+.checkbox-container label:after {
+    border: 3px solid #333;
+    border-right: none;
+    border-top: none;
+    content: '';
+    height: 3px;
+    left: 1.5px;
+    top: 2.7px;
+    opacity: 0;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 7px;
+}
+
+.checkbox-container input[type=checkbox]:checked + label:after {
+  opacity: .9;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+
 /* ================= HEADER STYLES ================= */
+
 
 .header {
   background-color: lightgreen;
   height: 30vh;
 }
 
+
 /* ================= BODY STYLES ================= */
+
 
 .main-body {
   background-color: lightblue;
