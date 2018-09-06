@@ -12,7 +12,7 @@ body {
 
 .navbar {
   display: grid;
-  grid-template-rows: 160px repeat(2, 1fr) 2fr;
+  grid-template-rows: 160px repeat(2, 1.5fr) 2fr;
   grid-row: span 2;
   height: 100vh;
 }
@@ -52,28 +52,28 @@ body {
 }
 
 .nav-item-title {
-  color: #626f82;
+  color: #626F82;
   margin: 0;
 }
 
 .nav-item-list {
   list-style: none;
   font-size: .7rem;
-  margin-top: 3px;
   padding-left: 0;
   text-transform: uppercase;
+}
+
+.nav-item-list-item {
+  height: 23px;
 }
 
 .list3 {
   text-transform: none;
 }
 
-.nav-item-list-item {
-  margin: 10px 0;
-}
-
-li i {
-  margin: 0 7px 0 2px;
+.top-menus td:first-child {
+  text-align: center;
+  padding-right: 5px;
 }
 
 /* === CUSTOM CHECKBOXES === */
