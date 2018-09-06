@@ -11,9 +11,8 @@ body {
 /* ================= NAVBAR STYLES ================= */
 
 .navbar {
-  background-color: blanchedalmond;
   display: grid;
-  grid-template-rows: 160px repeat(3, 1fr);
+  grid-template-rows: 160px repeat(2, 1fr) 2fr;
   grid-row: span 2;
   height: 100vh;
 }
@@ -22,6 +21,7 @@ body {
   align-items: center;
   background: #354052;
   border-bottom: 3px solid #2F3A4C;
+  color: #8E97A8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +34,6 @@ body {
 }
 
 .profile-title {
-  color: #8E97A8;
   font-size: .75rem;
   letter-spacing: .5px;
   margin: 0;
@@ -43,6 +42,98 @@ body {
 .profile-title i {
   margin: 2px;
 }
+
+/* === MENU STYLES === */
+
+.menu {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 0 0 10px;
+}
+
+.nav-item-title {
+  color: #626f82;
+  margin: 0;
+}
+
+.nav-item-list {
+  list-style: none;
+  font-size: .7rem;
+  margin-top: 3px;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+.list3 {
+  text-transform: none;
+}
+
+.nav-item-list-item {
+  margin: 10px 0;
+}
+
+li i {
+  margin: 0 7px 0 2px;
+}
+
+/* === CUSTOM CHECKBOXES === */
+
+.checkbox-container {
+  display: inline-block;
+  height: 14px;
+  margin-right: 5px;
+  position: relative;
+  width: 14px;
+}
+
+.checkbox-container label {
+  border-radius: 2px;
+  cursor: pointer;
+  left: 0;
+  height: 14px;
+  position: absolute;
+  top: 0;
+  width: 14px;
+}
+
+.checkbox-container #checkbox1 + label {
+  background: #FDD504;
+}
+
+.checkbox-container #checkbox2 + label {
+  background: #24AEFE;
+}
+
+.checkbox-container #checkbox3 + label {
+  background: #EB1760;
+}
+
+.checkbox-container #checkbox4 + label {
+  background: #01A887;
+}
+
+.checkbox-container label:after {
+    border: 3px solid #333;
+    border-right: none;
+    border-top: none;
+    content: '';
+    height: 3px;
+    left: 1.5px;
+    top: 2.7px;
+    opacity: 0;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 7px;
+}
+
+.checkbox-container input[type=checkbox]:checked + label:after {
+  opacity: .9;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
 
 /* ================= HEADER STYLES ================= */
 
