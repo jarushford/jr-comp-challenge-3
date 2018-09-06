@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: 20% 1fr;
+}
+
+/* ================= NAVBAR STYLES ================= */
+
+.navbar {
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-rows: 160px repeat(3 1fr);
+  grid-row: span 2;
+  height: 100vh;
+}
+
+/* ================= HEADER STYLES ================= */
+
+.header {
+  background-color: lightgreen;
+  height: 20vh;
+}
+
+/* ================= BODY STYLES ================= */
+
+.main-body {
+  background-color: lightblue;
+  height: 80vh;
+}
