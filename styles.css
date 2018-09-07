@@ -159,8 +159,66 @@ input[type=checkbox] {
 
 
 .header {
-  background-color: lightgreen;
   height: 30vh;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+}
+
+.search-input {
+  background: transparent;
+  border-top: transparent;
+  border-left: 1px solid #E6E6E6;
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 2px solid #E6E6E6;
+  color: #84898F;
+  font-size: 1.3rem;
+  outline: none;
+  padding: 5px 15px 3px;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  font-size: .9rem;
+  opacity: .5;
+}
+
+.header-button {
+  align-items: center;
+  background: transparent;
+  border-top: transparent;
+  border-left:  1px solid #E6E6E6;
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 2px solid #E6E6E6;
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 70px;
+}
+
+.header-button:hover {
+  background: #16A4F8;
+  border: none;
+}
+
+.header-button:hover i {
+  color: white;
+}
+
+.header-button i {
+  color: #A4A9AF;
+  font-size: 1rem;
+}
+
+.collapse {
+  border-left: none;
+}
+
+.collapse i {
+  font-size: 1.5rem;
 }
 
 
