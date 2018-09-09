@@ -301,6 +301,107 @@ input[type=checkbox] {
 
 
 .main-body {
-  background-color: lightblue;
-  height: 70vh;
+  border-top: 3px solid #E6E6E6;
+  background-color: #EDF2F6;
+  height: 70.3vh;
+  z-index: -1;
 }
+
+.data-container {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.circles-container {
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-around;
+  width: 380px;
+}
+
+.circle-background {
+  fill: none;
+  stroke-width: 8px;
+  stroke: #D9E4EA;
+}
+
+.circle-data {
+  fill: none;
+  stroke-width: 8px;
+  stroke: #49B7BF;
+  stroke-linecap: round;
+  stroke-dasharray: 282.7;
+  stroke-dashoffset: 50;
+  transform: rotate(95deg);
+  transform-origin: 50% 50%;
+  animation: circleone 1.5s ease-out;
+}
+
+.blue {
+  stroke: #16A2F6;
+  stroke-dashoffset: 170;
+  animation: circletwo 1.2s ease-out;
+}
+
+.purple {
+  stroke: #B465AA;
+  stroke-dashoffset: 220;
+  animation: circlethree 1s ease-out;
+}
+
+@keyframes circleone {
+  from {
+    stroke-dashoffset: 282.7;
+  }
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+
+@keyframes circletwo {
+  from {
+    stroke-dashoffset: 282.7;
+  }
+  to {
+    stroke-dashoffset: 170;
+  }
+}
+
+@keyframes circlethree {
+  from {
+    stroke-dashoffset: 282.7;
+  }
+  to {
+    stroke-dashoffset: 220;
+  }
+}
+
+.circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.circle-stat {
+  color: #5C6672;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+}
+
+.circle-stat-label {
+  color: #ACADB2;
+  font-size: .6rem;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 58px;
+}
+
+
+
+
