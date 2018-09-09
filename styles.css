@@ -159,7 +159,7 @@ input[type=checkbox] {
 
 
 .header {
-  height: 30vh;
+  height: 24vh;
 }
 
 .search-bar {
@@ -196,6 +196,7 @@ input[type=checkbox] {
   display: flex;
   height: 50px;
   justify-content: center;
+  outline: none;
   width: 70px;
 }
 
@@ -219,6 +220,80 @@ input[type=checkbox] {
 
 .collapse i {
   font-size: 1.5rem;
+}
+
+.main-title-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title-section {
+  margin: 15px 50px auto 30px;
+}
+
+.main-title {
+  color: #6F6E74;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.sub-title {
+  color: #BDC1C3;
+  font-size: .8rem;
+  margin: 0 auto auto 5px;
+}
+
+.sub-title-preview {
+  color: #7DC9f8;
+  cursor: pointer;
+}
+
+.title-button-container {
+  height: 28px;
+  margin: 40px 30px;
+}
+
+.open-button-svg {
+  margin-top: 4px;
+  transform: translateY(1px);
+}
+
+.title-button {
+  color: #8F939E; 
+  background: none;
+  border: 1px solid #D6D6D8;
+  font-size: .65rem;
+  text-transform: uppercase;
+  border-radius: 15px;
+  height: 28px;
+  padding-bottom: 4px;
+  outline: none;
+  cursor: pointer;
+  width: 70px;
+}
+
+.title-small-button {
+  margin-left: 7px;
+  width: 28px;
+  padding-bottom: 0;
+}
+
+.header-tabs {
+  color: #ACADB2;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  font-size: .6rem;
+  text-transform: uppercase;
+  margin-left: 30px;
+  height: 49px
+}
+
+.header-tab:first-child {
+  color: #686870;
+  border-bottom: 3px solid #3db0f3;
 }
 
 
