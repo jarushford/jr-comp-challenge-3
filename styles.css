@@ -14,9 +14,9 @@ body {
 
 .navbar {
   display: grid;
-  grid-template-rows: 160px repeat(2, 1.5fr) 2fr;
+  grid-template-rows: 160px repeat(2, 1.5fr) 10fr;
   grid-row: span 2;
-  height: 100vh;
+  height: 155vh;
 }
 
 .nav-item {
@@ -159,7 +159,7 @@ input[type=checkbox] {
 
 
 .header {
-  height: 24vh;
+  height: 27vh;
 }
 
 .search-bar {
@@ -300,25 +300,29 @@ input[type=checkbox] {
 /* ================= BODY STYLES ================= */
 
 
+/* === CIRCLE GRAPH === */
+
 .main-body {
   border-top: 3px solid #E6E6E6;
   background-color: #EDF2F6;
-  height: 70.3vh;
+  height: 125vh;
   z-index: -1;
 }
 
 .data-container {
   display: flex;
-  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 30vh;
+  height: 24vh;
 }
 
 .circles-container {
   display: flex;
   margin-left: 20px;
   justify-content: space-around;
-  width: 380px;
+  width: 50%;
+  max-width: 500px;
 }
 
 .circle-background {
@@ -404,6 +408,103 @@ input[type=checkbox] {
   top: 58px;
 }
 
+/* === BAR GRAPH === */
+
+.graph-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.graph-table {
+  height: 300px;
+  width: 120px;
+  transform: rotate(-90deg);
+}
+
+.graph-table-body {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.graph-bars {
+  height: 15px;
+}
+
+.graph-row {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.graph-day {
+  text-align: center;
+  color: #5C6672;
+  width: 24px;
+  font-size: .9rem;
+  transform: rotate(90deg);
+}
+
+.graph-labels {
+  color: #5C6672;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 12px;
+}
+
+.graph-labels td {
+  transform: rotate(90deg);
+  font-size: .65rem;
+  width: 18px;
+  text-align: center;
+}
+
+.line-accent {
+  stroke-width: 20px;
+  stroke: #44BABE;
+  animation: bar 1s;
+}
+
+.line-bg {
+  stroke-width: 20px;
+  stroke: #D9E4EA;
+  animation: bar 1s;
+}
+
+@keyframes bar {
+  from {
+    stroke-width: 0;
+  }
+  to {
+    stroke-width: 20px;
+  }
+}
+
+/* === DATA BUTTONS === */
+
+.data-buttons {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: .7rem;
+  height: 8vh;
+}
+
+.data-button {
+  background: #F8F9FB;
+  border: 1px solid #BDBDC3;
+  border-radius: 15px;
+  color: #5C6672;
+  padding: 5px 15px;
+  height: 25px;
+}
+
+/* === RULE DIVIDER === */
+
 .rule-section {
   display: flex;
   align-items: center;
@@ -421,6 +522,13 @@ input[type=checkbox] {
   font-size: 1.5rem;
   margin: 0;
   color: #BDBDC3;
+}
+
+/* === LOWER GRID === */
+
+.lower-main-section {
+  display: grid;
+  grid-template-columns: 1fr 30%;
 }
 
 
