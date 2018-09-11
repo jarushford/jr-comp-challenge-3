@@ -544,7 +544,7 @@ input[type=checkbox] {
   background: #FFF;
   border-bottom: 1px solid #D9D9D9;
   font-size: .7rem;
-  padding: 16px;
+  padding: 17px 16px;
   color: #5C6672;
 }
 
@@ -607,18 +607,21 @@ td .profile-pic {
 .social-sidebar {
   margin-top: 40px;
   width: 85%;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-button-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 125px;
+  height: 135px;
 }
 
 .social-button {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   border: none;
   border-radius: 3px;
   letter-spacing: .3px;
@@ -631,7 +634,9 @@ td .profile-pic {
 }
 
 .social-button i {
-  margin: auto 53px auto 10px;
+  position: absolute;
+  top: 30%;
+  left: 15px;
 }
 
 .facebook {
@@ -644,6 +649,72 @@ td .profile-pic {
 
 .linkedin {
   background: #0482bc;
+}
+
+.aside-header {
+  margin: 10px auto 3px auto;
+  font-size: .9rem;
+  color: #6F7E95;
+}
+
+.aside-header i {
+  font-size: .8rem;
+  margin-right: 3px;
+}
+
+.aside-text {
+  color: #6F7E95;
+  font-size: .7rem;
+  line-height: 130%;
+  margin: 5px auto 10px;
+}
+
+.aside-container {
+  margin-top: 5px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.separators {
+  border-bottom: 1px solid #BDBDC3;
+}
+
+.aside-input {
+  height: 30px;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #D9D9D9;
+  width: 81%;
+  padding-left: 8px;
+  outline: none;
+}
+
+.aside-input-button {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #47b6bf;
+  color: #FFF;
+  font-size: .5rem;
+  height: 30px;
+  width: 17%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  right: 4px;
+  bottom: 2.5px;
+}
+
+.last-aside-input {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.aside-input::placeholder {
+  font-size: .7rem;
+  color: #C9C9C9;
 }
 
 
