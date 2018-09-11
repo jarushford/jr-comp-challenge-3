@@ -6,6 +6,8 @@
 body {
   display: grid;
   grid-template-columns: 160px 1fr;
+  grid-template-rows: 197px 1fr;
+  height: 1000px;
 }
 
 
@@ -16,7 +18,7 @@ body {
   display: grid;
   grid-template-rows: 160px repeat(2, 1.5fr) 10fr;
   grid-row: span 2;
-  height: 155vh;
+  height: 93.5%;
 }
 
 .nav-item {
@@ -158,10 +160,6 @@ input[type=checkbox] {
 /* ================= HEADER STYLES ================= */
 
 
-.header {
-  height: 27vh;
-}
-
 .search-bar {
   display: flex;
   width: 100%;
@@ -194,7 +192,7 @@ input[type=checkbox] {
   border-bottom: 2px solid #E6E6E6;
   cursor: pointer;
   display: flex;
-  height: 50px;
+  height: 52px;
   justify-content: center;
   outline: none;
   width: 70px;
@@ -305,7 +303,7 @@ input[type=checkbox] {
 .main-body {
   border-top: 3px solid #E6E6E6;
   background-color: #EDF2F6;
-  height: 125vh;
+  height: 92%;
   z-index: -1;
 }
 
@@ -314,7 +312,7 @@ input[type=checkbox] {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 24vh;
+  height: 22%;
 }
 
 .circles-container {
@@ -491,7 +489,7 @@ input[type=checkbox] {
   align-items: flex-start;
   justify-content: space-around;
   font-size: .7rem;
-  height: 8vh;
+  height: 7%;
 }
 
 .data-button {
@@ -530,6 +528,131 @@ input[type=checkbox] {
   display: grid;
   grid-template-columns: 1fr 30%;
 }
+
+.job-description-card {
+  width: 88%;
+  margin: 40px auto;
+}
+
+.job-description-table {
+  table-layout: auto;
+  width: 100%;
+}
+
+
+.job-description-row td {
+  background: #FFF;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: .7rem;
+  padding: 16px;
+  color: #5C6672;
+}
+
+
+.job-description-row td:first-child {
+  text-transform: uppercase;
+  width: 27%;
+}
+
+.salary {
+  font-weight: 600;
+}
+
+td .profile-pic {
+  width: 35px;
+  margin: 0 10px;
+}
+
+.image-table-section {
+  display: flex;
+  align-items: center;
+}
+
+.first-job-row td {
+  color: #FFF;
+  background: #6F7E95;
+}
+
+.first-job-row td:first-child {
+  border-top-left-radius: 5px;
+}
+
+.first-job-row td:last-child {
+  border-top-right-radius: 5px;
+}
+
+.last-job-row td:first-child {
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+
+.last-job-row td:last-child {
+  border-bottom-right-radius: 5px;
+  border: none;
+}
+
+.job-edit-button {
+  color: #FFF;
+  background: #7C8CA6;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 4px;
+  width: 60px;
+  height: 25px;
+}
+
+/* === SOCIAL BUTTONS SECTION === */
+
+.social-sidebar {
+  margin-top: 40px;
+  width: 85%;
+}
+
+.social-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+}
+
+.social-button {
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: .3px;
+  line-height: 120%;
+  align-items: center;
+  height: 35px;
+  text-align: center;
+  color: #FFF;
+  font-size: .70rem;
+}
+
+.social-button i {
+  margin: auto 53px auto 10px;
+}
+
+.facebook {
+  background: #4b6fc3;
+}
+
+.twitter {
+  background: #01aaef;
+}
+
+.linkedin {
+  background: #0482bc;
+}
+
+
+
+
+
+
+
+
 
 
 
