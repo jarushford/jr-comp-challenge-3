@@ -10,6 +10,14 @@ body {
   height: 1000px;
 }
 
+.wide {
+  grid-template-columns: 0 1fr;
+}
+
+.collapsed {
+  opacity: 0;
+  z-index: -1;
+}
 
 /* ================= NAVBAR STYLES ================= */
 
@@ -41,11 +49,13 @@ body {
   font-size: .75rem;
   letter-spacing: .5px;
   margin: 0;
+  transition: .2s;
 }
 
 .profile-title:hover {
   color: white;
   cursor: pointer;
+  transition: .2s;
 }
 
 .profile-title i {
@@ -87,6 +97,21 @@ td:nth-child(2) {
   background: #30394A;
   color: white;
   cursor: pointer;
+  transition: .2s;
+}
+
+.nav-item-list-item td {
+  transition: .2s;
+}
+
+.nav-item-list-item td:first-child {
+  border-left: 2px solid transparent;
+  transition: .2s;
+}
+
+.nav-item-list-item:hover td:first-child {
+  border-left-color: #16A4F8;
+  transition: .2s;
 }
 
 .list3 {
@@ -103,7 +128,7 @@ td:nth-child(2) {
 .checkbox-container {
   display: inline-block;
   height: 14px;
-  margin-right: 7px;
+  margin-right: 3px;
   position: relative;
   width: 14px;
 }
@@ -196,11 +221,13 @@ input[type=checkbox] {
   justify-content: center;
   outline: none;
   width: 70px;
+  transition: .2s;
 }
 
 .header-button:hover {
   background: #16A4F8;
-  border: none;
+  border-color: #16A4F8;
+  transition: .2s;
 }
 
 .header-button:hover i {
@@ -218,6 +245,22 @@ input[type=checkbox] {
 
 .collapse i {
   font-size: 1.5rem;
+}
+
+.spin {
+  animation: .8s spin;
+  transform: rotate(180deg);
+  border-bottom: none;
+  border-top: 2px solid #E6E6E6;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
 .main-title-container {
@@ -246,6 +289,11 @@ input[type=checkbox] {
 .sub-title-preview {
   color: #7DC9f8;
   cursor: pointer;
+  opacity: .85;
+}
+
+.sub-title-preview:hover {
+  opacity: 1;
 }
 
 .title-button-container {
@@ -270,6 +318,12 @@ input[type=checkbox] {
   outline: none;
   cursor: pointer;
   width: 70px;
+  transition: .2s;
+}
+
+.title-button:hover {
+  border: 2px solid #16A4F8;
+  transition: .3s;
 }
 
 .title-small-button {
@@ -280,6 +334,7 @@ input[type=checkbox] {
 
 .header-tabs {
   color: #ACADB2;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -287,6 +342,15 @@ input[type=checkbox] {
   text-transform: uppercase;
   margin-left: 30px;
   height: 49px
+}
+
+.header-tab {
+  transition: .2s;
+}
+
+.header-tab:hover {
+  color: #686870;
+  transition: .2s;
 }
 
 .header-tab:first-child {
@@ -304,7 +368,6 @@ input[type=checkbox] {
   border-top: 3px solid #E6E6E6;
   background-color: #EDF2F6;
   height: 92%;
-  z-index: -1;
 }
 
 .data-container {
@@ -429,6 +492,11 @@ input[type=checkbox] {
 
 .graph-bars {
   height: 15px;
+  cursor: pointer;
+}
+
+.graph-bars:hover {
+  opacity: .8;
 }
 
 .graph-row {
@@ -497,8 +565,13 @@ input[type=checkbox] {
   border: 1px solid #BDBDC3;
   border-radius: 15px;
   color: #5C6672;
-  padding: 5px 15px;
+  padding: 6px 15px;
   height: 25px;
+  cursor: pointer;
+}
+
+.data-button:hover {
+  border-color: #16A4F8;
 }
 
 /* === RULE DIVIDER === */
@@ -551,7 +624,7 @@ input[type=checkbox] {
 
 .job-description-row td:first-child {
   text-transform: uppercase;
-  width: 27%;
+  width: 20%;
 }
 
 .salary {
@@ -600,6 +673,11 @@ td .profile-pic {
   padding: 4px;
   width: 60px;
   height: 25px;
+  cursor: pointer;
+}
+
+.job-edit-button:hover {
+  opacity: .8;
 }
 
 /* === SOCIAL BUTTONS SECTION === */
@@ -631,6 +709,11 @@ td .profile-pic {
   text-align: center;
   color: #FFF;
   font-size: .70rem;
+}
+
+.social-button:hover {
+  cursor: pointer;
+  opacity: .9;
 }
 
 .social-button i {
@@ -704,6 +787,7 @@ td .profile-pic {
   position: relative;
   right: 4px;
   bottom: 2.5px;
+  cursor: pointer;
 }
 
 .last-aside-input {
