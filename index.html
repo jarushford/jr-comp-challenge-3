@@ -153,15 +153,18 @@
           <button class='title-button title-small-button'><i class="fas fa-trash-alt"></i></button>
         </section>
       </div>
-      <section class='header-tabs'>
-        <h3 class='header-tab'>Summary</h3>
-        <h3 class='header-tab'>Applicants</h3>
-        <h3 class='header-tab'>Job Board</h3>
-        <h3 class='header-tab'>Interviews</h3>
-        <h3 class='header-tab'>Activity</h3>
-        <h3 class='header-tab'>Broadcast</h3>
-        <h3 class='header-tab'>Notification</h3>
-      </section>
+      <div class='tabs-container'>
+        <section class='header-tabs'>
+          <h3 class='header-tab'>Summary</h3>
+          <h3 class='header-tab'>Applicants</h3>
+          <h3 class='header-tab'>Job Board</h3>
+          <h3 class='header-tab'>Interviews</h3>
+          <h3 class='header-tab'>Activity</h3>
+          <h3 class='header-tab'>Broadcast</h3>
+          <h3 class='header-tab'>Notification</h3>
+        </section>
+        <i class="fas fa-angle-double-down"></i>
+      </div>
     </header>
     <main class='main-body'>
       <section class='data-container'>
@@ -190,6 +193,7 @@
               <circle class='circle-data purple' cx='50' cy='50' r='45'/>  
             </svg>
           </div>
+          <button class='data-button totals'>TOTALS &bull; Out of 5,231 views</button>
         </div>
         <div class='graph-container'>
           <table class='graph-table'>
@@ -330,11 +334,8 @@
               </tr>
             </tbody>
           </table>
+          <button class='data-button applicants'>APPLICANTS/DAY</button>
         </div>
-      </section>
-      <section class='data-buttons'>
-        <button class='data-button'>TOTALS &bull; Out of 5,231 views</button>
-        <button class='data-button'>APPLICANTS/DAY</button>
       </section>
       <div class='rule-section'>
         <hr class='drop-down-rule'>
@@ -420,6 +421,7 @@
       </section>
     </main>
   </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
 
 
