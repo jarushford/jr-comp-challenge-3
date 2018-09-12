@@ -337,13 +337,22 @@ input[type=checkbox] {
 .header-tabs {
   color: #ACADB2;
   cursor: pointer;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 80px);
+  grid-template-rows: 48px;
+  text-align: center;
   justify-content: space-between;
-  width: 75%;
+  width: 80%;
   font-size: .6rem;
   text-transform: uppercase;
   margin-left: 30px;
-  height: 49px
+  height: 49px;
+}
+
+.tabs-container {
+  width: 100%;
+  height: 40px;
+  position: relative;
 }
 
 .header-tab {
@@ -358,6 +367,11 @@ input[type=checkbox] {
 .header-tab:first-child {
   color: #686870;
   border-bottom: 3px solid #3db0f3;
+}
+
+
+.fa-angle-double-down {
+  opacity: 0;
 }
 
 
@@ -834,7 +848,7 @@ td .profile-pic {
 
 /* ====== SMALL SCREEN MEDIA QUERIES ====== */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
 
   .navbar {
     display: none;
@@ -880,6 +894,267 @@ td .profile-pic {
     100% {
       transform: rotate(0deg);
     }
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .data-container {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 33%;
+    padding-bottom: 0;
+  }
+
+  .navbar {
+    height: 300%;
+    grid-template-rows: 160px repeat(2, .8fr) 10fr;
+  }
+
+  .main-body {
+    height: 100%;
+  }
+
+    svg {
+    transform: scale(1.1, 1.1);
+  }
+
+  .circles-container {
+    margin: 40px auto 200px;
+  }
+
+  .circles-container svg {
+    margin: auto 25px;
+  }
+
+  .graph-container {
+    height: 250px;
+  }
+
+  .graph-day {
+    width: 75px;
+    margin-bottom: 5px;
+  }
+
+  .graph-row {
+    margin: 3px;
+  }
+
+  .graph-labels {
+    margin: auto 20px 0 50px;
+  }
+
+  .totals {
+    position: absolute;
+    top: 175px;
+  }
+
+  .applicants {
+    position: absolute;
+    bottom: 70px;
+    transition: none;
+  }
+
+  .header-tabs {
+    overflow: hidden;
+  }
+
+  .fa-angle-double-down {
+    position: absolute;
+    color: black;
+    font-size: 1rem;
+    right: 60px;
+    top: 8px;
+    color: #ACADB2;
+    cursor: pointer;
+    transition: .2s;
+    opacity: 1;
+  }
+
+  .fa-angle-double-down:hover {
+    color: #686870;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .lower-main-section {
+    grid-template-columns: 1fr;
+  }
+
+  .social-sidebar {
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  .title-button-container {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  .main-title {
+    font-size: 1.2rem;
+  }
+
+  .main-title-section {
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+
+  .navbar {
+    height: 300%;
+    grid-template-rows: 160px repeat(2, .8fr) 10fr;
+  }
+
+  .main-title-container {
+    flex-direction: column;
+  }
+
+  .main-title-section {
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  body {
+    grid-template-rows: 233px 1fr;
+  }
+
+  .title-button-container {
+    margin: 20px 0 25px 0;
+  }
+
+  .fa-angle-double-down {
+    right: 30px;
+  }
+
+  .header-tabs {
+    grid-template-columns: repeat(auto-fit, 70px);
+  }
+
+  .data-container {
+    height: 27%;
+  }
+
+    svg {
+    transform: scale(1, 1);
+  }
+
+  .circles-container {
+    margin: 30px auto 130px;
+  }
+
+  .circles-container svg {
+    margin: auto 12px;
+  }
+
+  .graph-container {
+    height: 240px;
+  }
+
+  .graph-day {
+    width: 35px;
+    margin-bottom: 5px;
+  }
+
+  .graph-row {
+    margin: 1px;
+  }
+
+  .graph-labels {
+    margin: auto 20px 2px 27px;
+  }
+
+  .main-body {
+    height: 100%;
+  }
+
+  .applicants {
+    position: absolute;
+    bottom: 45px;
+  }
+
+  .search-input::placeholder {
+    font-size: .75rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .fa-angle-double-down {
+    right: 20px;
+  }
+
+  .data-container {
+    height: 28%;
+  }
+
+  .main-body {
+    height: 107%;
+  }
+
+  .navbar {
+    height: 300%;
+    grid-template-rows: 160px repeat(2, .8fr) 10fr;
+  }
+
+    svg {
+    transform: scale(.8, .8);
+  }
+
+  .circles-container {
+    margin: 30px auto 70px;
+  }
+
+  .circles-container svg {
+    margin: auto 4px;
+  }
+
+  .graph-container {
+    height: 190px;
+  }
+
+  .graph-day {
+    width: 10px;
+    margin-bottom: 3px;
+  }
+
+  .graph-row {
+    margin: 0px;
+  }
+
+  .graph-labels {
+    opacity: 0;
+    display:none;
+  }
+
+  .graph-table {
+    height: 200px;
+  }
+
+  .circle-stat {
+    font-size: 1.2rem;
+    top: 33px;
+  }
+
+  .circle-stat-label {
+    top: 55px;
+  }
+
+  .applicants {
+    bottom: 40px;
+  }
+
+  .header-tabs {
+    margin-left: 22px;
+  }
+
+  .search-input::placeholder {
+    font-size: .7rem;
   }
 
 }
