@@ -578,7 +578,7 @@ input[type=checkbox] {
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 130px;
+  width: 140px;
   height: 55px;
   transform: rotate(90deg);
   background: black;
@@ -1367,6 +1367,11 @@ td .profile-pic {
     margin-left: 2%;
   }
 
+  .graph-hover-box {
+    top: 25px;
+    left: 200px;
+  }
+
 }
 
 @media screen and (min-width: 1800px) {
@@ -1425,6 +1430,11 @@ td .profile-pic {
 
   .lower-main-section {
     grid-template-columns: 1fr 48%;
+  }
+
+  .graph-hover-box {
+    top: 30px;
+    left: 290px;
   }
 
 
