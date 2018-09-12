@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <title>Static Comp #3</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -11,7 +11,7 @@
   <body class='grid-major'>
     <nav class='navbar'>
       <section class='nav-item profile'>
-        <img class='profile-pic' src='images/cuttlefish.jpg'>
+        <img class='profile-pic' src='images/cuttlefish.jpg' alt='Profile picture for a beautiful, professional cuttlefish'>
         <h5 class='profile-title'>
           The Cuttlefish
           <i class="fas fa-angle-down"></i>
@@ -25,23 +25,23 @@
         </thead>
         <tbody class='nav-item-list'>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-home"></i></td>
+            <td><i class="fas fa-home" title='home'></i></td>
             <td>Home</td>
           </tr>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-briefcase"></i></td>
+            <td><i class="fas fa-briefcase" title='jobs'></i></td>
             <td>Jobs</td>
           </tr>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-file"></i></td>
+            <td><i class="fas fa-file" title='resumes'></i></td>
             <td>Resumes</td>
           </tr>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-clipboard-check"></i></td>
+            <td><i class="fas fa-clipboard-check" title='tasks'></i></td>
             <td>Tasks</td>
           </tr>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-calendar-alt"></i></td>
+            <td><i class="fas fa-calendar-alt" title='calendar'></i></td>
             <td>Calendar</td>
           </tr>
         </tbody>
@@ -54,23 +54,23 @@
         </thead>
         <tbody class='nav-item-list'>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-user-friends"></i></td>
+            <td><i class="fas fa-user-friends" title='users'></i></td>
             <td>Users</td>
           </tr>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-map-marker-alt"></i></td>
+            <td><i class="fas fa-map-marker-alt" title='locations'></i></td>
             <td>Locations</td>
           </tr>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-sitemap"></i></td>
+            <td><i class="fas fa-sitemap" title='workflows'></i></td>
             <td>Workflows</td>
           </tr>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-columns"></i></td>
+            <td><i class="fas fa-columns" title='job-boards'></i></td>
             <td>Job Boards</td>
           </tr>
           <tr class='nav-item-list-item top-menus'>
-            <td><i class="fas fa-share-alt"></i></td>
+            <td><i class="fas fa-share-alt" title='social'></i></td>
             <td>Social</td>
           </tr>
         </tbody>
@@ -120,16 +120,16 @@
     <header class='header'>
       <section class='search-bar'>
         <button class='collapse header-button'>
-          <i class="fas fa-angle-double-left"></i>
+          <i class="fas fa-angle-double-left" title='navbar' role='collapse-navbar'></i>
         </button>
         <input class='search-input' type="text" aria-label='search-page' name="Search" placeholder="&#x1F50D; Search for a job, task, or resume">
         <button class='header-button'>
-          <i class="fas fa-user-plus"></i>
+          <i class="fas fa-user-plus" title='new-user'></i>
         </button>
         <button class='header-button'>
-          <i class="fas fa-calendar-plus"></i>
+          <i class="fas fa-calendar-plus" title='events'></i>
         </button>
-        <button class='header-button'>
+        <button class='header-button' title='see-all'>
           <i class="fas fa-th"></i>
         </button>
       </section>
@@ -155,15 +155,15 @@
       </div>
       <div class='tabs-container'>
         <section class='header-tabs'>
-          <h3 class='header-tab'>Summary</h3>
-          <h3 class='header-tab'>Applicants</h3>
-          <h3 class='header-tab'>Job Board</h3>
-          <h3 class='header-tab'>Interviews</h3>
-          <h3 class='header-tab'>Activity</h3>
-          <h3 class='header-tab'>Broadcast</h3>
-          <h3 class='header-tab'>Notification</h3>
+          <h3 class='header-tab' role='section-link'>Summary</h3>
+          <h3 class='header-tab' role='section-link'>Applicants</h3>
+          <h3 class='header-tab' role='section-link'>Job Board</h3>
+          <h3 class='header-tab' role='section-link'>Interviews</h3>
+          <h3 class='header-tab' role='section-link'>Activity</h3>
+          <h3 class='header-tab' role='section-link'>Broadcast</h3>
+          <h3 class='header-tab' role='section-link'>Notification</h3>
         </section>
-        <i class="fas fa-angle-double-down"></i>
+        <i class="fas fa-angle-double-down" title='expand-tabs'></i>
       </div>
     </header>
     <main class='main-body'>
@@ -395,27 +395,27 @@
         </article>
         <aside class='social-sidebar'>
           <div class='social-button-container aside-container'>
-            <button class='social-button facebook'><i class="fab fa-facebook-f"></i> Post to Facebook</button>
-            <button class='social-button twitter'><i class="fab fa-twitter"></i> Tweet this Job</button>
-            <button class='social-button linkedin'><i class="fab fa-linkedin"></i> Post to LinkedIn</button>
+            <button class='social-button facebook'><i class="fab fa-facebook-f"title='facebook'></i> Post to Facebook</button>
+            <button class='social-button twitter'><i class="fab fa-twitter" title='twitter'></i> Tweet this Job</button>
+            <button class='social-button linkedin'><i class="fab fa-linkedin" title='linkedin'></i> Post to LinkedIn</button>
           </div>
           <div class='aside-container separators'>
             <h3 class='aside-header'><i class="fas fa-globe-americas"></i> Link to this Job</h3>
             <p class='aside-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore.</p>
-            <input type="text" name="link" class='aside-input' placeholder="http://loremipsum.dol/sit_amet">
+            <input type="text" name="link" class='aside-input' placeholder="http://loremipsum.dol/sit_amet" aria-label='link-to-this-job'>
             <button class='aside-input-button'>Copy</button>
           </div>
           <div class='aside-container separators'>
             <h3 class='aside-header'><i class="fas fa-tablet-alt"></i> Use the Button Widget</h3>
             <p class='aside-text'>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
-            <input type="text" name="widget" class='aside-input' placeholder="<script type='text/javascript' src='....'">
+            <input type="text" name="widget" class='aside-input' placeholder="<script type='text/javascript' src='....'" aria-label='embed-widget'>
             <button class='aside-input-button'>Copy</button>
           </div>
           <div class='aside-container'>
             <h3 class='aside-header'><i class="fab fa-telegram-plane"></i> Upload Resumes by Email</h3>
             <p class='aside-text'>You can automatically upload multiple resumes to this job by emailing the address below.</p>
-            <input type="text" name="send" class='aside-input last-aside-input' placeholder="tomtizzy@gmail.com">
+            <input type="text" name="send" class='aside-input last-aside-input' placeholder="tomtizzy@gmail.com" aria-label='submit-to-this-email'>
           </div>
         </aside>
       </section>

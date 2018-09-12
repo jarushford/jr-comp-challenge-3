@@ -10,7 +10,6 @@ collapseButton.addEventListener('click', function() {
 
 var graphBars = document.querySelectorAll('.graph-bars');
 
-
 for (var i = 0; i < graphBars.length; i++) {
   graphBars[i].addEventListener('mouseenter', function(event) {
     HTML = event.target.innerHTML;
