@@ -161,10 +161,10 @@ td:nth-child(2) {
 }
 
 .checkbox-container label:after {
+  border: 3px solid #333;
   border-right: none;
   border-top: none;
-  border: 3px solid #333;
-  content: '';
+  content: ' ';
   height: 3px;
   left: 1.5px;
   opacity: 0;
