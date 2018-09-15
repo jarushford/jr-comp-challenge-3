@@ -15,7 +15,7 @@ for (var i = 0; i < graphBars.length; i++) {
     HTML = event.target.innerHTML;
     var data = event.target.firstElementChild.firstElementChild.getAttribute('x1');
     var day = event.target.getAttribute('id');
-    event.target.insertAdjacentHTML('beforeend', 
+    event.target.insertAdjacentHTML('beforeend',
       `<div class='graph-hover-box'>
         <h3>${day}</h3>
         <p><span>${data}</span> Applications</p>
@@ -25,7 +25,8 @@ for (var i = 0; i < graphBars.length; i++) {
 
 for (var i = 0; i < graphBars.length; i++) {
   graphBars[i].addEventListener('mouseleave', function(event) {
-    event.target.innerHTML = HTML;
+    var hoverBox = event.target.lastElementChild;
+    event.target.removeChild(hoverBox);
   })
 }
 

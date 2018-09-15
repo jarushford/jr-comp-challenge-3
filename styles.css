@@ -551,23 +551,34 @@ input[type=checkbox] {
 }
 
 .line-accent {
-  animation: bar .5s;
+  animation: bar 1.2s ease-out;
   stroke-width: 20px;
+  stroke-dasharray: 115%;
   stroke: #44BABE;
+  stroke-dashoffset: 0;
 }
 
 .line-bg {
-  animation: bar .5s;
   stroke-width: 20px;
   stroke: #D9E4EA;
+  animation: barbackground 2s ease-in; 
+}
+
+@keyframes barbackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes bar {
   from {
-    stroke-width: 0;
+    stroke-dashoffset: 80px;
   }
   to {
-    stroke-width: 20px;
+    stroke-dashoffset: 0px;
   }
 }
 
@@ -614,6 +625,7 @@ input[type=checkbox] {
   cursor: pointer;
   font-size: .7rem;
   height: 25px;
+  outline: none;
   padding: 6px 15px;
   transition: .2s;
 }
@@ -739,6 +751,7 @@ td .profile-pic {
   cursor: pointer;
   height: 25px;
   letter-spacing: .5px;
+  outline: none;
   padding: 4px;
   text-transform: uppercase;
   transition: .2s;
@@ -778,6 +791,7 @@ td .profile-pic {
   justify-content: center;
   letter-spacing: .3px;
   line-height: 120%;
+  outline: none;
   position: relative;
   text-align: center;
   transition: .2s;
@@ -857,6 +871,7 @@ td .profile-pic {
   font-size: .5rem;
   height: 30px;
   margin: 0;
+  outline: none;
   padding: 0;
   position: relative;
   right: 4px;
@@ -1003,7 +1018,6 @@ td .profile-pic {
 
   .fa-angle-double-down {
     color: #ACADB2;
-    color: black;
     cursor: pointer;
     font-size: 1rem;
     opacity: 1;
