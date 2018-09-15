@@ -7,6 +7,6 @@ Below is the original comp:
 
 ![alt text](images/comp.jpg)
 
-And the finished static site (you can also visit the static page [here]():
+And the finished static site (you can also visit the static page [here](https://jarushford.github.io/jr-comp-challenge-3/):
 
 ![Alt text](images/final.jpg) 
