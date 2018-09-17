@@ -529,7 +529,7 @@ input[type=checkbox] {
 
 .graph-day {
   color: #5C6672;
-  font-size: .9rem;
+  font-size: .75rem;
   text-align: center;
   transform: rotate(90deg);
   width: 24px;

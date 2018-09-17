@@ -29,4 +29,4 @@ for (var i = 0; i < graphBars.length; i++) {
     event.target.removeChild(hoverBox);
   })
 }
-
+  
