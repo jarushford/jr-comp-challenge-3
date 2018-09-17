@@ -401,6 +401,7 @@ input[type=checkbox] {
   display: flex;
   justify-content: center;
   margin-left: 20px;
+  margin-bottom: 20px;
   width: 50%;
 }
 
@@ -976,7 +977,7 @@ td .profile-pic {
   }
 
   .circles-container {
-    margin: 40px auto 200px;
+    margin: 55px auto 200px;
   }
 
   .circles-container svg {
@@ -1003,7 +1004,7 @@ td .profile-pic {
 
   .totals {
     position: absolute;
-    top: 175px;
+    top: 185px;
   }
 
   .applicants {
